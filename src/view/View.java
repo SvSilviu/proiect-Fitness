@@ -9,13 +9,14 @@ import java.util.Scanner;
 public class View {
 
     private Scanner scanner = new Scanner(System.in);
-    private ControlEnrolment controlEnrolment;
-    private ControlUser controlUser ;
+    private ControlEnrolment controlEnrolment = new ControlEnrolment();
+    private ControlUser controlUser = new ControlUser();
     private ControlAbonamente controlAbonamente =new ControlAbonamente();
 
     public void meniu(){
 
         System.out.println("Apasati tasta 1 pentru a afisa abonamentele disponibile");
+        System.out.println("Apasati tasta 2 pentru a afisa userii");
 
     }
 
@@ -29,6 +30,9 @@ public class View {
                 case 1:
                     afisareAbonamente();
                     break;
+                case 2:
+                    afisareUseri();
+                    break;
                 default:
             }
         }
@@ -38,6 +42,9 @@ public class View {
 
        controlAbonamente.afisareAbonamente();
 
+    }
+    public void afisareUseri(){
+        controlUser.afisare();
     }
 
 }
