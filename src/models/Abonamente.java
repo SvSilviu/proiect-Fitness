@@ -60,10 +60,11 @@ public class Abonamente {
     public String descriereaAbonamentului() {
 
         String text = "";
-        text += "Nume - " + numeAbonament + "\n";
-        text += "Prenume - " + tipAbonament + "\n";
-        text += "Varsta - " + durataMin + "\n";
-        text += "Id client - " + idAbonat + "\n";
+        text += "Id abonat - " + idAbonat + "\n";
+        text += "Nume abonament - " + numeAbonament + "\n";
+        text += "Tip abonament - " + tipAbonament + "\n";
+        text += "Durata in minute - " + durataMin + "\n";
+
 
         return text;
 

@@ -1,9 +1,9 @@
-1,Alergare in panta,Fitness,45
-2,Alergare pe scari,Fitness,30
-3,Piept & Umeri,BodyBuilding,60
-4,Spate & Abdomene,BodyBuilding,60
-5,Biceps & Triceps,BodyBuilding,60
-6,Alergare pe banda,Fitness,40
-7,Circuit Cardio,Fitness,35
+1,Alergare,Fitness,45
+2,Scari,Fitness,30
+3,Piept-Umeri,BodyBuilding,60
+4,Spate-Abdomene,BodyBuilding,60
+5,Biceps-Triceps,BodyBuilding,60
+6,Alergare-banda,Fitness,40
+7,Circuit-Cardio,Fitness,35
 8,Picioare,BodyBuiding,50
-9,Fotbal in Sala,Fitness,60
+9,Fotbal,Fitness,60
