@@ -24,7 +24,7 @@ public class ControlAbonamente {
            while (scanner.hasNextLine()){
 
                String text = scanner.nextLine();
-               Abonamente abonamente = new Abonamente();
+               Abonamente abonamente = new Abonamente(text);
 
                abonamenteArrayList.add(abonamente);
            }
