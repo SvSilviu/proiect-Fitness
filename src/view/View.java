@@ -26,20 +26,16 @@ public class View {
         while (run==true){
             meniu();
             alegere = Integer.parseInt(scanner.nextLine());
-            switch (alegere){
-                case 1:
-                    afisareAbonamente();
-                    break;
-                case 2:
-                    afisareUseri();
-                    break;
-                default:
+            switch (alegere) {
+                case 1 -> afisareAbonamente();
+                case 2 -> afisareUseri();
+                default -> {
+                }
             }
         }
     }
 
     public void afisareAbonamente(){
-
        controlAbonamente.afisareAbonamente();
 
     }
