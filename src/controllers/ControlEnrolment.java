@@ -18,6 +18,8 @@ public class ControlEnrolment {
 
     public void loadEnrolment() {
 
+
+
         try {
             File file = new File("C:\\mycode\\oop\\incapsualrea\\ProiectSala\\src\\data\\abonamente.txt");
             Scanner scanner = new Scanner(file);

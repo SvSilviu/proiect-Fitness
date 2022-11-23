@@ -3,6 +3,8 @@ package controllers;
 import models.User;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,7 +16,10 @@ public class ControlUser {
         loadUser();
     }
 
+
     public void loadUser() {
+
+        this.userArrayList.clear();
 
         try {
             File file = new File("C:\\mycode\\oop\\incapsualrea\\ProiectSala\\src\\data\\users");
@@ -27,6 +32,7 @@ public class ControlUser {
 
         }catch (Exception exception){
 
+            exception.printStackTrace();
         }
 
     }
@@ -44,7 +50,36 @@ public class ControlUser {
         }
         return null;
     }
+    public String toSave(){
 
+        String text = "";
+        for (User u : userArrayList){
+            text+=u.toSave()+"\n";
+        }
+        return text;
+    }
 
+    public int size() {
+        return this.userArrayList.size();
+    }
+
+    public void save(){
+
+        try {
+            File file = new File("C:\\mycode\\oop\\incapsualrea\\ProiectSala\\src\\data\\users");
+            FileWriter fileWriter = new FileWriter(file);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.print(toSave());
+            printWriter.close();
+        }catch (Exception e){
+
+        }
+
+    }
+
+    public void add(User user){
+
+        this.userArrayList.add(user);
+    }
 
 }

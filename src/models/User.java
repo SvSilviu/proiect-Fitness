@@ -112,4 +112,9 @@ public class User {
 
         return text;
     }
+
+    public String toSave() {
+        return this.id + "," + this.nume + "," + this.prenume + "," + this.email + "," + this.parola + "," + this.varsta + "," + this.type;
+    }
+
 }
