@@ -69,5 +69,8 @@ public class Abonamente {
         return text;
 
     }
+    public String toSave(){
+        return this.idAbonat + "," + this.numeAbonament + "," + tipAbonament + "," + durataMin;
+    }
 
 }
