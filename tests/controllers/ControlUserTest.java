@@ -21,7 +21,6 @@ class ControlUserTest {
 
     @Test
     public void testUserNameSiParola() {
-
         ControlUser controlUser = new ControlUser();
         User user = new User(23, "nume", "prenume", "email", "parola", 33, "instructor");
         controlUser.add(user);
@@ -32,7 +31,6 @@ class ControlUserTest {
 
     @Test
     public void testUserSiParolaNullScenario() {
-
         ControlUser controlUser = new ControlUser();
         assertEquals(null, controlUser.usernameSiParola("sdsadasda", "dassadas"));
 
