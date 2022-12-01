@@ -50,11 +50,12 @@ public class ControlUser {
         }
         return null;
     }
-    public String toSave(){
+
+    public String toSave() {
 
         String text = "";
-        for (User u : userArrayList){
-            text+=u.toSave()+"\n";
+        for (User u : userArrayList) {
+            text += u.toSave() + "\n";
         }
         return text;
     }

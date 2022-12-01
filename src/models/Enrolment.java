@@ -46,7 +46,6 @@ public class Enrolment {
     }
 
     public String descriereInchiriere() {
-
         String text = "";
         text += "Id - " + id + "\n";
         text += "User Id - " + userId + "\n";
@@ -54,6 +53,10 @@ public class Enrolment {
 
         return text;
 
+    }
+
+    public String toSave() {
+        return this.id + "," + this.abonatId + "," + this.userId;
     }
 
 }
