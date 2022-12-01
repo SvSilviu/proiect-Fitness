@@ -16,6 +16,8 @@ public class ControlAbonamente {
 
     public void loadAbonamente() {
 
+        this.abonamenteArrayList.clear();
+
        try {
            File file =new File("C:\\mycode\\oop\\incapsualrea\\ProiectSala\\src\\data\\abonamente.txt");
 
@@ -40,6 +42,22 @@ public class ControlAbonamente {
         for (int i = 0; i < abonamenteArrayList.size(); i++) {
             System.out.println(abonamenteArrayList.get(i).descriereaAbonamentului());
         }
+    }
+
+    public int size(){
+        return this.abonamenteArrayList.size();
+    }
+
+    public void addAbonament(Abonamente abonamente) {
+        this.abonamenteArrayList.add(abonamente);
+    }
+
+    public String toSave() {
+        String text = "";
+        for (Abonamente a : abonamenteArrayList) {
+            text += a.toSave() + "\n";
+        }
+        return text;
     }
 
 }
